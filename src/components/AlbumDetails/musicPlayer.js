@@ -28,7 +28,7 @@ const MusicPlayer = props => {
           volume={volume}
           onLoadedMetadata={e => setDuration(e.target.duration)}
           onTimeUpdate={e => setTime(e.target.currentTime)}
-        />
+        ></audio>
 
         <button
           className="music-controll"

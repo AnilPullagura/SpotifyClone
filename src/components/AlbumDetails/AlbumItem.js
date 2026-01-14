@@ -6,10 +6,10 @@ const AlbumItem = props => {
   const {details, onchangeItem, isActive} = props
   const {trackid, trackDuration, trackName, trackArtist} = details
 
-  const getDuration = trackDuration => {
-    const totalSeconds = Math.floor(trackDuration / 1000)
+  const getDuration = trackDurationSec => {
+    const totalSeconds = Math.floor(trackDurationSec / 1000)
     const minutes = Math.floor(totalSeconds / 60)
-    const seconds = trackDuration % 60
+    const seconds = trackDurationSec % 60
     return `${minutes}:${seconds.toString().padStart(2, '0')}`
   }
   const activeAlbum = isActive && 'active-track'
