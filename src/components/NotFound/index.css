@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap');
+
+@media (min-width: 768px) {
+  .notfound-container {
+    display: flex;
+  }
+  .notfound-box {
+    padding: 20px;
+  }
+  .notfound-card {
+    width: 85vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 90vh;
+  }
+  .notfound-text {
+    font-family: Assistant;
+    font-weight: 800;
+    font-size: 400px;
+    background: linear-gradient(
+      359.08deg,
+      rgba(0, 188, 67, 0) -32.43%,
+      #1ed760 99.35%
+    );
+    margin: 0px;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .notfound-para {
+    font-family: Assistant;
+    font-weight: 700;
+    font-size: 32px;
+    color: #ffffff;
+    margin: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .notfound-box {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10vh;
+  }
+  .notfound-card {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .notfound-text {
+    font-family: Assistant;
+    font-weight: 800;
+    font-style: Extra Bold;
+    font-size: 148px;
+    margin: 0px;
+    background: linear-gradient(
+      359.08deg,
+      rgba(0, 188, 67, 0) -32.43%,
+      #1ed760 99.35%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .notfound-para {
+    font-family: Assistant;
+    font-weight: 700;
+    font-size: 32px;
+    margin: 0px;
+    color: #ffffff;
+  }
+}
+.notfound-container {
+  background-color: #181818;
+}
+
+.back-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+}
+.back-icon {
+  height: 24px;
+  width: 24px;
+}

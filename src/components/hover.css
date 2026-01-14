@@ -1,0 +1,8 @@
+.hover:hover {
+  transform: scale(1.03);
+  transition-duration: 300ms;
+}
+.btn-hover:hover {
+  background-image: linear-gradient(to bottom right, #1db954, lime);
+  color: white;
+}

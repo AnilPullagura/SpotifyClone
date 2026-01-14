@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: Assistant;
+}
+@media (min-width: 768px) {
+  .album-details-container {
+    background-color: #181818;
+    display: flex;
+  }
+  .album-details-main-container {
+    padding: 20px;
+    width: 100vw;
+  }
+  .album-container {
+    margin-top: 30px;
+  }
+  .album-link {
+    border: none;
+    outline: none;
+    font: 22px;
+    color: #ffffff;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+  }
+  .album-top-img {
+    height: 295px;
+    width: 295px;
+    border-radius: 6px;
+  }
+  .album-top-box {
+    display: flex;
+  }
+  .album-top-text-box {
+    align-self: flex-end;
+    margin-left: 20px;
+  }
+  .album-name-text {
+    font-family: Assistant;
+    font-weight: 600;
+    font-size: 16px;
+    color: #ffffff;
+  }
+  .album-text {
+    font-family: Assistant;
+    font-weight: 600;
+    font-size: 80px;
+    color: #ffffff;
+    line-height: 0%;
+  }
+  .album-artist-name {
+    font-family: Assistant;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 16px;
+  }
+  .album-details-list {
+    margin-left: -20px;
+    width: 85vw;
+    height: 55vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+  }
+  .album-details-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+  }
+  .album-music-player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    color: #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top: 1px solid #9b9b9b;
+    width: 100%;
+    background-color: #181818a0;
+    backdrop-filter: blur(3px);
+  }
+  .player-track-name {
+    line-height: 0%;
+    font-size: 16px;
+  }
+  .player-artist-name {
+    line-height: 40%;
+    color: #9b9b9b;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 767px) {
+  .mobile-album-header {
+    display: none;
+  }
+  .album-details-container {
+    background-color: #181818;
+    min-height: 100vh;
+    padding: 10px;
+  }
+  .album-details-main-container {
+    padding-top: 20px;
+  }
+  .album-link {
+    border: none;
+    outline: none;
+    font: 22px;
+    color: #ffffff;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+  }
+  .album-top-img {
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+  }
+  .album-top-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+  }
+  .album-name-text {
+    display: none;
+  }
+  .album-text {
+    font-family: Assistant;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+    text-align: center;
+  }
+  .album-artist-name {
+    font-family: Assistant;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 0%;
+    color: #94a3b8;
+    text-align: center;
+  }
+  .album-details-item {
+    display: none;
+  }
+  .album-details-list {
+    list-style-type: none;
+    margin-left: -40px;
+  }
+  .album-hr-mobile {
+    display: none;
+  }
+  .album-music-player {
+    position: fixed;
+    bottom: 0;
+    color: #ffffff;
+    background-color: #181818c1;
+    backdrop-filter: blur(2px);
+    border-top: 1px solid #9b9b9b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 10px;
+  }
+  .player-track-name {
+    font-family: Assistant;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+  .player-artist-name {
+    font-family: Assistant;
+    font-weight: 600;
+    font-size: 10px;
+    color: #9b9b9b;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+}

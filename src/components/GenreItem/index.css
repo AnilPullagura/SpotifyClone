@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap');
+
+@media (min-width: 768px) {
+  .album-img {
+    height: 150px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .album-item {
+    width: 18%;
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .album-img {
+    height: 82px;
+    width: 80%;
+    border-radius: 5px;
+  }
+  .album-item {
+    width: 30%;
+    margin: 5px;
+  }
+}

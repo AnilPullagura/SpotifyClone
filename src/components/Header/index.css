@@ -1,0 +1,117 @@
+@media (max-width: 767px) {
+  .header-container-mobile-view {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #04030679;
+    position: fixed;
+    backdrop-filter: blur(2px);
+    width: 100vw;
+  }
+  .header-logo-img {
+    height: 24px;
+    width: 64px;
+  }
+  .humberger-btn {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    align-self: flex-end;
+  }
+  .log-out-btn {
+    background-color: #1ed760;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    width: 50%;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+    gap: 5px;
+  }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    background-color: #040306;
+    padding: 20px;
+    height: 100vh;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    transition: right ease 0.3s;
+  }
+  .open {
+    right: 0;
+  }
+  .btn-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .profile-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile {
+    color: #ffffff;
+    height: 40px;
+    width: 40px;
+  }
+  .close {
+    color: #ffffff;
+    height: 30px;
+    width: 30px;
+  }
+  .header-pc-view {
+    display: none;
+  }
+}
+* {
+  font-family: 'Roboto';
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .mobile-hide {
+    display: none;
+  }
+  .header-logo-img {
+    height: 33px;
+    width: 84px;
+  }
+  .header-pc-view {
+    height: 100vh;
+    padding: 10px;
+    background-color: #040306;
+    width: 8vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .log-out-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #9b9b9b;
+  }
+  .log-out-icon {
+    height: 30px;
+    width: 30px;
+  }
+  .log-out-btn:hover {
+    color: #1ed760;
+  }
+}

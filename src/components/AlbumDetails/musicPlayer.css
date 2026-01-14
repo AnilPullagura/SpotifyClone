@@ -1,0 +1,44 @@
+@media (min-width: 768px) {
+  .music-player {
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    flex-grow: 2;
+  }
+  .music-controll {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  .play {
+    color: #1db954;
+    height: 40px;
+    width: 40px;
+  }
+  .seek {
+    width: 50vw;
+    accent-color: #1db954;
+  }
+  .mobile-music-player {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .music-player {
+    display: none;
+  }
+  .mobile-controls {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  .mobile-play {
+    color: #1db954;
+    height: 34px;
+    width: 34px;
+  }
+}

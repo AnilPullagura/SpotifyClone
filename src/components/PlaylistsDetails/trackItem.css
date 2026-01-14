@@ -1,0 +1,99 @@
+@media (min-width: 768px) {
+  .track-item-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+  }
+  .trackName {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .album {
+    flex: 1;
+  }
+  .duration {
+    flex: 1;
+  }
+  .artistName {
+    flex: 2;
+  }
+  .className {
+    flex: 1;
+  }
+  .play-icon {
+    height: 20px;
+    width: 20px;
+    color: #1db954;
+    display: none;
+  }
+  .pause-icon {
+    height: 20px;
+    width: 20px;
+    color: #1db954;
+  }
+  .track-list-item {
+    color: white;
+    padding: 20px;
+  }
+  .track-list-item:hover .play-icon {
+    display: block;
+  }
+  .track-list-item:hover {
+    background-color: #303030;
+  }
+  .play-btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+  .active-track {
+    background-color: #303030;
+  }
+  .track-list-item-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .track-list-item {
+    display: none;
+  }
+  .track-list-item-mobile {
+    color: white;
+    padding: 10px;
+  }
+  .active-mobile-track {
+    background-color: #303030;
+  }
+  .track-item-mobile-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .track-details-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .track-names {
+    display: flex;
+    flex-direction: column;
+  }
+  .track-item-mobile-name {
+    font-family: Assistant;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .track-item-mobile-artist {
+    font-family: Assistant;
+    font-weight: 600;
+    font-size: 12px;
+    color: #9b9b9b;
+  }
+  .mobile-track-duration {
+    color: #9b9b9b;
+  }
+}

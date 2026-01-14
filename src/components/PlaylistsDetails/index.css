@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: Assistant;
+}
+.playlist-loading-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading-text {
+  color: #ffffff;
+  text-align: center;
+}
+.playlist-failure-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #040306;
+  border-radius: 8px;
+}
+.failure-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .playlist-details-mobile-view {
+    display: none;
+  }
+  .playlist-details-pc-view-container {
+    background-color: #181818;
+    display: flex;
+  }
+  .playlist-container-pc-view {
+    padding: 20px;
+  }
+  .back-to-home-icon {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+  }
+  .playlist-loading-view {
+    height: 90vh;
+    width: 85vw;
+  }
+  .playlist-failure-container {
+    height: 90vh;
+    width: 85vw;
+  }
+  .failure-img {
+    height: 48px;
+    width: 48px;
+  }
+  .playlist-top-box {
+    display: flex;
+    align-items: center;
+  }
+  .playlist-text-box {
+    align-self: flex-end;
+    margin-left: 20px;
+    color: #ffffff;
+  }
+  .playlist-img {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+  }
+  .playlist-name {
+    font-family: Assistant;
+    font-weight: 600;
+    font-size: 80px;
+    margin: 0px;
+  }
+  .track-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+  }
+  .track-list {
+    width: 85vw;
+    margin-top: 30px;
+    margin-left: -30px;
+    height: 55vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+  }
+  .track {
+    flex: 2;
+  }
+  .album {
+    flex: 1;
+    text-align: center;
+  }
+  .time {
+    flex: 1;
+    text-align: center;
+  }
+  .artist {
+    flex: 2;
+    text-align: center;
+  }
+  .added {
+    flex: 1;
+    text-align: right;
+  }
+  .play-box {
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid #9b9b9b;
+    width: 85vw;
+    background-color: #181818ba;
+    backdrop-filter: blur(2px);
+    padding: 10px;
+    color: #ffffff;
+  }
+  .mini-player-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .mini-player-text {
+    line-height: 5px;
+  }
+
+  .mini-artist-name {
+    color: #9b9b9b;
+    font-size: 12px;
+  }
+  .spotify-api {
+    display: flex;
+    align-items: center;
+  }
+  .spotify-img {
+    height: 50px;
+  }
+  .player {
+    width: 100%;
+    height: 100px;
+  }
+  .mobile-play-box {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  * {
+    box-sizing: border-box;
+    font-family: Assistant;
+  }
+  .playlist-details-pc-view-container {
+    display: none;
+  }
+  .playlist-details-mobile-view {
+    min-height: 100vh;
+    background-color: #181818;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+  .back-to-home-mobile-icon {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .playlist-loading-mobile-view {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .loading-text-mobile {
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+  }
+  .playlist-failure-container {
+    min-height: 100vh;
+  }
+  .playlist-top-box-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    line-height: 0%;
+  }
+  .playlist-top-box-image-mobile {
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .playlist-top-box-mobile-ownerName {
+    color: #94a3b8;
+  }
+  .track-list-mobile {
+    margin-left: -20px;
+  }
+  .play-box {
+    display: none;
+  }
+  .mobile-play-box {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #9b9b9b;
+    width: 100vw;
+    background-color: #181818ba;
+    backdrop-filter: blur(2px);
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #ffffff;
+  }
+  .mobile-mini-player {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .mini-player-img {
+    height: 43px;
+    width: 43px;
+  }
+  .mini-player-track-name {
+    font-family: Assistant;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 40%;
+  }
+  .mini-player-track-artist {
+    font-family: Assistant;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 100%;
+    color: #9b9b9b;
+  }
+}
