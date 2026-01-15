@@ -14,8 +14,14 @@ const getDuration = trackDuration => {
 
 const TrackItem = props => {
   const {details, updateId, isActive} = props
-  const {added, artistName, trackId, trackName, trackDuration, albumType} =
-    details
+  const {
+    added,
+    artistName,
+    trackId,
+    trackName,
+    trackDuration,
+    albumType,
+  } = details
   const activeClas = isActive && 'active-track'
   const activeTrack = isActive && 'active-mobile-track'
   const addedTime = formatDistanceToNow(new Date(added), {addSuffix: true})

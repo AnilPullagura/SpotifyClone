@@ -241,8 +241,12 @@ const PlaylistsDetails = props => {
     if (curentTrack) {
       const {tracks} = tracklist
       const trackDetails = tracks.filter(each => each.trackId === curentTrack)
-      const {artistName, songPreviewUrl, trackName, trackPlayImage} =
-        trackDetails[0]
+      const {
+        artistName,
+        songPreviewUrl,
+        trackName,
+        trackPlayImage,
+      } = trackDetails[0]
 
       return (
         <>

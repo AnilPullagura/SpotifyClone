@@ -73,9 +73,7 @@ form {
 .login-btn:hover {
   z-index: 1;
   color: black;
-  box-shadow:
-    40px 0 60px lime,
-    -40px 0 60px white;
+  box-shadow: 40px 0 60px lime, -40px 0 60px white;
 }
 .err-msg {
   color: lime;
