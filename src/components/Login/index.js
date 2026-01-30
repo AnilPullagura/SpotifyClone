@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import {useState} from 'react'
 import Cookies from 'js-cookie'
 import {Redirect, useHistory} from 'react-router-dom'
 
@@ -34,6 +34,11 @@ const Login = () => {
     } else {
       loginFailure(data.error_msg)
     }
+  }
+
+  const useSampleData = () => {
+    setUsername('rahul')
+    setPassword('rahul@2021')
   }
 
   const jwtToken = Cookies.get('jwt_token')
@@ -77,10 +82,18 @@ const Login = () => {
               placeholder="password"
             />
           </div>
-
-          <button type="submit" className="login-btn">
-            Login
-          </button>
+          <div className="btn-box">
+            <button type="submit" className="login-btn">
+              Login
+            </button>
+            <button
+              type="button"
+              onClick={useSampleData}
+              className="sample-btn login-btn"
+            >
+              Sample Data
+            </button>
+          </div>
           {errMsg && <p className="err-msg">* {errMsg}</p>}
         </form>
       </div>

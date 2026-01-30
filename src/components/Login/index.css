@@ -79,6 +79,12 @@ form {
   color: lime;
   text-align: center;
 }
+.btn-box {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-content: center;
+}
 @media (min-width: 768px) {
   .login-content-container {
     min-width: 456px;
