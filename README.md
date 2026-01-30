@@ -22,8 +22,8 @@ This project helped me explore **media players**, **Spotify APIs**, and **deploy
 
 ## 🛠️ Tech Stack
 - **Frontend**: React, HTML, CSS, Bootstrap  
-- **Backend**: Express.js, Node.js  
-- **Database**: MongoDB / SQL (if applicable)  
+- **Backend**: Express.js, Node.js  mock Apis
+- **Database**:  SQL   
 - **Deployment**: Vercel  
 
 ---
